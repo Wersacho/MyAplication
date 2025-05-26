@@ -5,6 +5,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -19,6 +20,7 @@ import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material.Button
+import androidx.compose.material.TextButton
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.runtime.Composable
@@ -161,8 +163,19 @@ fun SignUpScreen(){ // функция, которая отрисовывает �
 
         ){
 
-            Text("Зарегистрироваться", color = colorResource(id = R.color.white))
+            Text("Зарегистрироваться",
+                fontSize = 16.sp,
+                color = colorResource(id = R.color.white))
 
+        }
+
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text("Уже есть аккаунт?")
+            TextButton(onClick = {
+                //перекидывает на экран входа
+            }) {
+                Text("Войти", color = colorResource(id = R.color.red))
+            }
         }
 
         // разделительная строка с надписью "ИЛИ" посередине
@@ -182,17 +195,23 @@ fun SignUpScreen(){ // функция, которая отрисовывает �
             HorizontalDivider(modifier = Modifier.weight(1f)) // линия, занимает все доступное пространство - 1f
         }
 
+        // вход с гугл
         OutlinedButton(onClick = { },
             modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
             shape = RoundedCornerShape(64.dp)
             ){
 
+            //иконка
             Image(
                 painter = painterResource(id = R.drawable.ic_google),
                 contentDescription = null,
                 modifier = Modifier.size(24.dp))
 
+            //gutter=8dp
+            Spacer(modifier = Modifier.size(8.dp))
 
+            //подпись
+            Text("Войти с Google")
         }
 
     }
