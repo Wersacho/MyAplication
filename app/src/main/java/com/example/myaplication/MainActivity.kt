@@ -14,7 +14,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.myaplication.presentation.LoginScreenUi
 import com.example.myaplication.presentation.SignUpScreen
 import com.example.myaplication.ui.theme.MyAplicationTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint // позволяет Hilt внедрять зависимости в этот класс
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
