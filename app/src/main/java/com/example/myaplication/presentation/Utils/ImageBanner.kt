@@ -19,7 +19,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.LaunchedEffect as LaunchedEffect1
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -83,7 +83,7 @@ fun Banner(banners : List<BannerDataModels>) {
     val pagerState = rememberPagerState(pageCount = {banners.size})
     val scope = rememberCoroutineScope()
 
-    LaunchedEffect(Unit) {
+    LaunchedEffect1(Unit) {
 
         while (true){
             delay(1500)
