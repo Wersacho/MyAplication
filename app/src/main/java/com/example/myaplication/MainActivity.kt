@@ -4,15 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.myaplication.presentation.LoginScreenUi
-import com.example.myaplication.presentation.SignUpScreen
 import com.example.myaplication.ui.theme.MyAplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -24,7 +16,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyAplicationTheme {
 
-                LoginScreenUi()
+                LoginScreenUi(navController)
 
                 }
             }

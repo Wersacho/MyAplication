@@ -1,11 +1,9 @@
 package com.example.myaplication.presentation
 
-import android.widget.Button
 import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -38,11 +36,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.example.myaplication.R
 import com.example.myaplication.presentation.Utils.CustomTextField
 
 @Composable
-fun LoginScreenUi(){
+fun LoginScreenUi(navController: NavHostController) {
     val context = LocalContext.current
 
     var email by remember { mutableStateOf("") }

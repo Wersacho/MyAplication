@@ -2,7 +2,6 @@ package com.example.myaplication.presentation
 
 import android.widget.Toast
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -11,14 +10,12 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material.Button
 import androidx.compose.material.TextButton
 import androidx.compose.material3.HorizontalDivider
@@ -35,17 +32,17 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.example.myaplication.R
 import com.example.myaplication.presentation.Utils.CustomTextField
 
 @Preview(showSystemUi = true) // 	Позволяет просматривать UI без запуска
 @Composable // указывает, что функция создает UI с помощью Jetpack Compose
-fun SignUpScreen(){ // функция, которая отрисовывает экран регистрации
+fun SignUpScreen(navController: NavHostController) { // функция, которая отрисовывает экран регистрации
 
     val context = LocalContext.current // нужен, если хочешь показать Toast или получить доступ к ресурсам
     var firstName by remember { mutableStateOf("") } // создаёт переменную с состоянием, которую Jetpack Compose будет отслеживать.
