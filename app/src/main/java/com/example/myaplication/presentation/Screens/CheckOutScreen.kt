@@ -7,7 +7,6 @@ import com.example.myaplication.presentation.viewModels.ShoppingAppViewModel
 
 @Composable
 fun CheckoutScreen(
-    viewModel: ShoppingAppViewModel = hiltViewModel(),
     navController: NavController,
     productID: String
 ){

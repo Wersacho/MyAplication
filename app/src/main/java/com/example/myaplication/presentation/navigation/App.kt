@@ -96,7 +96,7 @@ fun App(
 
     )
 
-    val  startScreen = if(firebaseAuth.currentUser != null) {
+    var  startScreen = if(firebaseAuth.currentUser == null) {
 
         SubNavigation.LoginSignUpScreen
 
@@ -164,9 +164,7 @@ fun App(
 
             }
 
-        }
-
-    ) { innerpadding ->
+        }) { innerpadding ->
 
         Box(
 

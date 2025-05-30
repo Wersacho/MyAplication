@@ -30,6 +30,7 @@ import com.example.myaplication.domain.useCase.UserProfileImageUseCase
 import com.example.myaplication.domain.useCase.getCategoryInLimit
 import com.example.myaplication.domain.useCase.getProductById
 import com.example.myaplication.domain.useCase.getProductsInLimitUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine

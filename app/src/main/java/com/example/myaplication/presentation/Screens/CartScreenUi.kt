@@ -6,7 +6,7 @@ import androidx.navigation.NavController
 import com.example.myaplication.presentation.viewModels.ShoppingAppViewModel
 
 @Composable
-fun CartScreen(viewModel: ShoppingAppViewModel = hiltViewModel(), navController: NavController) {
+fun CartScreen(navController: NavController) {
 
 
 

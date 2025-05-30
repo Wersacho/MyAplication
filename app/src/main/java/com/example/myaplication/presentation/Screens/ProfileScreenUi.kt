@@ -7,7 +7,7 @@ import com.example.myaplication.presentation.viewModels.ShoppingAppViewModel
 import com.google.firebase.auth.FirebaseAuth
 
 @Composable
-fun ProfileScreenUi(viewModel: ShoppingAppViewModel = hiltViewModel(), navController: NavController, firebaseAuth: FirebaseAuth){
+fun ProfileScreenUi(navController: NavController, firebaseAuth: FirebaseAuth){
 
 
 

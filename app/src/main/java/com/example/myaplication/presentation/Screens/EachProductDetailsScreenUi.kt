@@ -6,7 +6,7 @@ import androidx.navigation.NavController
 import com.example.myaplication.presentation.viewModels.ShoppingAppViewModel
 
 @Composable
-fun EachProductDetailsScreenUi(viewModel: ShoppingAppViewModel = hiltViewModel(), navController: NavController, productId: String){
+fun EachProductDetailsScreenUi(navController: NavController, productId: String){
 
 
 

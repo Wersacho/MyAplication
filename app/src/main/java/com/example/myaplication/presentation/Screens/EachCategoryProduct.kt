@@ -6,7 +6,7 @@ import androidx.navigation.NavController
 import com.example.myaplication.presentation.viewModels.ShoppingAppViewModel
 
 @Composable
-fun EachCategoryProduct(viewModel: ShoppingAppViewModel = hiltViewModel(), navController: NavController, categoryName: String){
+fun EachCategoryProduct(navController: NavController, categoryName: String){
 
 
 
