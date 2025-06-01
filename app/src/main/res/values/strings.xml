@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MyAplication</string>
+    <string name="app_name">Shivam App</string>
+    <string name = "Profile">Shivam Sharma</string>
 </resources>

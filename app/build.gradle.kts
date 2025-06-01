@@ -11,11 +11,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myaplication"
+    namespace = "com.example.shopping"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.myaplication"
+        applicationId = "com.example.shopping"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
@@ -72,6 +72,7 @@ dependencies {
     implementation(libs.googleid)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.storage)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
